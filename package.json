@@ -3,9 +3,15 @@
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
+
+  "scripts": {
+    "build": "pnpm --filter @workspace/api-server run build",
+    "start": "pnpm --filter @workspace/api-server run start"
+  },
+
   "devDependencies": {
     "prettier": "^3.8.1",
-    "typescript": "~5.9.2"
+    "typescript": "^5.9.2"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.2",
